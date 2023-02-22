@@ -1,2 +1,0 @@
-# LightHouse-website
- 

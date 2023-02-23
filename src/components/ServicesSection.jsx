@@ -1,37 +1,39 @@
-import React from 'react'
+import styles from '../styles/Services.module.css';
 
 const ServicesSection = () => {
   return (
-    <section>
-        <div>
+    <section className={styles.section}>
+        <div className={styles.container}>
 
-            <div>
-                <h3>SERVICES</h3>
-                <p>What we're good at</p>
+            <div className={styles.headingContainer}>
+                <h3 className={styles.title}>SERVICES</h3>
+                <p className={styles.subheading}>
+                    What we're <span className={styles.skewText}>good</span> at
+                </p>
             </div>
 
-            <div>
-                <div>
-                    <span>DESIGN</span>
-                    <span>01</span>
+            <div className={styles.rowContainer}>
+                <div className={styles.itemContainer}>
+                    <span className={styles.item}>DESIGN</span>
+                    <span className={styles.number}>01</span>
                 </div>
-                <div>
-                    <span>PRE-PRODUCTION</span>
-                    <span>02</span>
+                <div className={styles.itemContainer}>
+                    <span className={styles.item}>PRE-PRODUCTION</span>
+                    <span className={styles.number}>02</span>
                 </div>
-                <div>
-                    <span>PRODUCTION</span>
-                    <span>03</span>
+                <div className={styles.itemContainer}>
+                    <span className={styles.item}>PRODUCTION</span>
+                    <span className={styles.number}>03</span>
                 </div>
-                <div>
-                    <span>POST</span>
-                    <span>04</span>
+                <div className={styles.itemContainer}>
+                    <span className={styles.item}>POST</span>
+                    <span className={styles.number}>04</span>
                 </div>
             </div>
 
-            <div>
-                <h4>
-                    A PRODUCTION PARTNER FOR BRANDS, AGENCIES AND CREATORS.
+            <div className={styles.bigTextContainer}>
+                <h4 className={styles.bigText}>
+                    A <span className={styles.underline}>PRODUCTION</span> PARTNER FOR BRANDS, AGENCIES AND CREATORS.
                 </h4>
             </div>
 

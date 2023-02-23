@@ -1,6 +1,7 @@
 .header {
     width: 100vw;
     height: 120vh;
+    padding-top: 5rem;
 }
 
 .textContainer {
@@ -49,7 +50,7 @@
     height: 25rem;
     position: absolute;
     right: 5rem;
-    top: 55vh;
+    top: 50vh;
     z-index: 0;
 }
 

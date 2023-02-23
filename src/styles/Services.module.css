@@ -1,0 +1,78 @@
+.section {
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(100vw - 10rem);
+}
+
+.headingContainer {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.title {
+    font-size: 10rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.subheading {
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.skewText {
+    font-family: serif;
+    font-style: italic;
+}
+
+.rowContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.itemContainer {
+    width: 65vw;
+    padding: 1.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.item {
+    font-size: 2.2rem;
+    font-family: sans-serif;
+}
+
+.number {
+    font-size: 2.2rem;
+    font-family: sans-serif;
+}
+
+.bigTextContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.bigText {
+    font-size: 5.9rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+}

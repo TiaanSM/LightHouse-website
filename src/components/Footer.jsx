@@ -1,35 +1,35 @@
-import React from 'react'
+import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer>
-        <div>
-            <div>
-                <span>LH</span>
+    <footer className={styles.footer}>
+        <div className={styles.topContainer}>
+            <div className={styles.circle}>
+                <span className={styles.initial}>LH</span>
             </div>
 
-            <h5>LET'S START SOMETHING.</h5>
+            <h5 className={styles.bigText}>LET'S START SOMETHING.</h5>
 
-            <span>HELLO@LIGHTHOUSE.FAKE</span>
+            <span className={styles.email}>HELLO@LIGHTHOUSE.FAKE</span>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <a href="">WORK</a>
-                    <a href="">ABOUT</a>
-                    <a href="">CONTACT</a>
+        <div className={styles.midContainer}>
+            <div className={styles.mainLinkContainer}>
+                <div className={styles.linkContainer}>
+                    <a href="" className={styles.link}>WORK</a>
+                    <a href="" className={styles.link}>ABOUT</a>
+                    <a href="" className={styles.link}>CONTACT</a>
                 </div>
-                <div>
-                    <a href="">V</a>
-                    <a href="">insta</a>
-                    <a href="">linkdin</a>
+                <div className={styles.linkContainer}>
+                    <a href="" className={styles.link}>V</a>
+                    <a href="" className={styles.link}>insta</a>
+                    <a href="" className={styles.link}>linkdin</a>
                 </div>
             </div>
 
-            <div>
-                <a href="">BACK TO TOP</a>
-                <span>&copy;THE LIGHT HOUSE LTD</span>
+            <div className={styles.bottomContainer}>
+                <a href="" className={styles.topLink}>BACK TO TOP</a>
+                <span className={styles.copyright}>&copy;THE LIGHT HOUSE LTD</span>
             </div>
         </div>
 

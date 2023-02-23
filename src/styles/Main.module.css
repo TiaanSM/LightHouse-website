@@ -1,0 +1,29 @@
+.main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: calc(100vw - 10rem);
+}
+
+.mainText {
+    color: rgb(160, 159, 159);
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    padding-inline: 10rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.workTitle {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 8rem;
+    padding-bottom: 10rem;
+}

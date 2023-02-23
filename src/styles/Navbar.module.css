@@ -1,0 +1,50 @@
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: calc(100vw - 10rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+.logoText {
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta {
+    padding: 1rem 1.7rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(54, 54, 54);
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    margin-right: 2rem;
+    transition: border 0.5s ease;
+}
+
+.menuContainer {
+    padding: 0.2rem;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 2rem;
+    transition: border 0.5s ease;
+}
+
+.cta:hover, .menuContainer:hover {
+    border: 1px solid white;
+}

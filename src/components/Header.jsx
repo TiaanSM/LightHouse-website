@@ -1,21 +1,19 @@
-import React from 'react'
+import styles from '../styles/Header.module.css'
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
 
-        <div>
-            <h1>
-                IDEAS THAT <span>MOVE</span>
+        <div className={styles.textContainer}>
+            <h1 className={styles.title}>
+                IDEAS THAT <span className={styles.underline}>MOVE</span>
             </h1>
-            <span>SCROLL<span></span></span>
+            <span className={styles.scrollText}>SCROLL</span>
+            <span className={styles.line}></span>
         </div>
 
-        <div>
-            <span>FILMED ON LOCATION IN zaflag</span>
-            <div>
-                <img src="" alt="image or video check design" />
-            </div>
+        <div className={styles.container}>
+            <img src="" alt="" className={styles.video} />
         </div>
 
     </header>

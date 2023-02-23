@@ -1,23 +1,22 @@
-import React from 'react'
+import styles from '../styles/Main.module.css';
 
 const Main = () => {
   return (
-    <main>
-        <div>
+    <main className={styles.main}>
+        <div className={styles.container}>
 
 
-            <h2>
-                Light Factory<svg> is a full service video production house. 
-                A close-knit team of creators and producers, 
-                giving life to ideas of all shapes</svg> and sizes.
+            <h2 className={styles.mainText}>
+                Light House is a <span>full</span> service video production <span>house</span>. 
+                A close-knit team of <span>creators</span> and producers, 
+                giving life to ideas of all <span>shapes</span> and sizes.
             </h2>
 
-            <div>
-                <div>
-                    <h3>"WORK"</h3>
-                </div>
-
-                5 cards to display work (component to reuse)
+            <div className={styles.workContainer}>
+                <h3 className={styles.workTitle}>"WORK"</h3>
+                    <div>
+                    5 cards to display work (component to reuse)
+                    </div>
             </div>
 
         </div>

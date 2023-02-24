@@ -7,10 +7,13 @@ const Main = () => {
     <div className={styles.container}>
 
       <h2 className={styles.mainText}>
-        Light House is a <span className={styles.highlight}>full </span> 
+        Light House <span className={styles.square1}>
+        <span className={styles.circle}></span></span> is a <span className={styles.highlight}>full </span> 
         service video production <span className={styles.highlight}>house</span>. 
         A close-knit team of <span className={styles.standout}>creators</span> and producers, 
-        giving life to ideas of all <span className={styles.highlight}>shapes</span> and sizes.
+        giving life to ideas of all 
+        <span className={styles.highlight}> shapes </span>
+        <span className={styles.square2}><span className={styles.circle}></span></span> and sizes.
       </h2>
 
       <div className={styles.workContainer}>

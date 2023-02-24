@@ -1,14 +1,17 @@
 import styles from '../styles/Footer.module.css'
+import vimeoLogo from '../assets/vimeo.png'
+import instagramLogo from '../assets/instagram.png'
+import linkedinLogo from '../assets/linkedin.png'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-        <div className={styles.topContainer}>
-            <div className={styles.circle}>
-                <span className={styles.initial}>LH</span>
-            </div>
 
-            <h5 className={styles.bigText}>LET'S START SOMETHING.</h5>
+        <div className={styles.topContainer}>
+
+            <span className={styles.initial}>LH</span>
+
+            <h5 className={styles.bigText}>LET'S <span className={styles.underline}>START</span> SOMETHING</h5>
 
             <span className={styles.email}>HELLO@LIGHTHOUSE.FAKE</span>
         </div>
@@ -21,9 +24,15 @@ const Footer = () => {
                     <a href="" className={styles.link}>CONTACT</a>
                 </div>
                 <div className={styles.linkContainer}>
-                    <a href="" className={styles.link}>V</a>
-                    <a href="" className={styles.link}>insta</a>
-                    <a href="" className={styles.link}>linkdin</a>
+                    <a href="" className={styles.link2}>
+                        <img src={vimeoLogo} alt="vimeo-logo" className={styles.linkLogo} />
+                    </a>
+                    <a href="" className={styles.link2}>
+                        <img src={instagramLogo} alt="instagram-logo" className={styles.linkLogo} />
+                    </a>
+                    <a href="" className={styles.link2}>
+                        <img src={linkedinLogo} alt="linkdin-logo" className={styles.linkLogo} />
+                    </a>
                 </div>
             </div>
 

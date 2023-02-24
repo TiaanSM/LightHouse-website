@@ -1,0 +1,144 @@
+.section {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squareContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    position: absolute;
+    z-index: 0;
+}
+
+.square {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 40s linear infinite;
+}
+
+.circle {
+    border: 1px solid rgb(65, 65, 65);
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.textContainer {
+    z-index: 20;
+    width: calc(100% - 10rem);
+}
+
+.title {
+    font-size: 10rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 9.5rem;
+    padding-bottom: 15rem;
+}
+
+.hollowText {
+    color: transparent;
+    font-size: 10rem;
+    -webkit-text-stroke: 1px white;
+    font-family: sans-serif;
+}
+
+.imageContainer {
+    width: calc(100% - 10rem);
+}
+
+.image1 {
+    position: absolute;
+    top: 30rem;
+    width: 56vw;
+    aspect-ratio: 4/2.36;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+.image2 {
+    position: absolute;
+    top: 65rem;
+    right: 5rem;
+    width: 20vw;
+    aspect-ratio: 4/4;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+.image3 {
+    position: absolute;
+    width: 20vw;
+    aspect-ratio: 3/2.3;
+    background-color: black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 3rem;
+    left: 30rem;
+}
+.smallSquare {
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    animation: colorChange 10s infinite linear;
+}
+.smallCircle {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border-radius: 100%; 
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: lightgreen;
+    }
+    33% {
+        background-color: purple;
+    }
+    66% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: lightgreen;
+    }
+}

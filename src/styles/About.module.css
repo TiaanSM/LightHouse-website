@@ -8,7 +8,7 @@
 }
 
 .brandContainer {
-    width: 190vw;
+    width: calc(18rem * 8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
 
 .brand {
     width: 18rem;
-    height: 18rem;
+    aspect-ratio: 1/1;
     border-left: 1px solid gray;
     background-color: whitesmoke;
     display: flex;
@@ -88,5 +88,28 @@
     }
     100% {
         transform: translateX(-40%);
+    }
+}
+
+@media (max-width: 640px) {
+
+    .brandContainer {
+        width: calc(12rem * 8);
+        animation: slideM 15s linear infinite;
+    }
+    .brand {
+        width: 12rem;
+    }
+
+    .aboutLink {
+        font-size: 1rem;
+    }
+}
+@keyframes slideM {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-65%);
     }
 }

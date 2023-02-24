@@ -30,7 +30,8 @@
     color: white;
     font-family: sans-serif;
     font-weight: 300;
-    font-size: 6.5rem;
+    font-size: 3.5rem;
+    font-size: clamp(3.5rem, 1.755813953488372rem + 5.5813953488372094vw, 6.5rem);
     padding-bottom: 8rem;
     text-align: center;
 }
@@ -137,5 +138,100 @@
     }
     100% {
         border-bottom: 2px solid purple;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .topContainer {
+        width: calc(100vw - 4rem);
+    }
+    .mainLinkContainer {
+        width: calc(100vw - 4rem);
+    }
+    .bottomContainer {
+        width: calc(100vw - 4rem);
+    }
+    .link {
+        padding-right: 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .link {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+    .link2 {
+        padding: 0.4rem;
+        margin-right: 0.6rem;
+    }
+    .linkLogo {
+        width: 16px;
+        height: 16px;
+    }
+    .bottomContainer {
+        border-radius: 2rem 2rem 0 0;
+        height: 4rem;
+    }
+    .topLink {
+        padding-left: 1.5rem;
+    }
+    .copyright {
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .topContainer {
+        width: calc(100vw - 2.4rem);
+    }
+
+    .bigText {
+        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 1rem + 8vw, 3.5rem);
+        padding-top: 5rem;
+    }
+    .email {
+        padding-bottom: 5rem;
+    }
+
+    .mainLinkContainer {
+        width: calc(100vw - 2.4rem);
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 4.5rem;
+        padding-bottom: 4rem;
+    }
+    .link {
+        font-size: 1.2rem;
+        padding-right: 0rem;
+        padding-inline: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .link2 {
+        margin-right: 0rem;
+        padding: 0.5rem;
+        margin-inline: 0.5rem;
+    }
+    .linkLogo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .bottomContainer {
+        justify-content: center;
+        flex-direction: column;
+        height: 6rem;
+        width: calc(100vw - 2.4rem);
+    }
+    .topLink {
+        padding-left: 0rem;
+    }
+    .copyright {
+        padding-right: 0rem;
+        padding-top: 1rem;
     }
 }

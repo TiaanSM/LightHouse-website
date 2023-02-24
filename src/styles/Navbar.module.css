@@ -52,3 +52,19 @@
 .cta:hover, .menuContainer:hover {
     border: 1px solid white;
 }
+
+@media (max-width: 900px) {
+    .container {
+        width: calc(100vw - 4rem);
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .container {
+        width: calc(100vw - 2.4rem);
+    }
+    .cta {
+        display: none;
+    }
+}

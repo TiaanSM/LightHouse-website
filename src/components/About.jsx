@@ -3,6 +3,9 @@ import brandLogo from '../assets/brandLogo.png'
 import Logo from './Logo'
 
 const About = () => {
+
+  const isMobile = window.innerWidth < 640;
+
   return (
     <section className={styles.section}>
 
@@ -24,7 +27,7 @@ const About = () => {
 
         <div className={styles.aboutSection}>
             <div className={styles.aboutContainer}>
-              <Logo size="35vw" fill="lightgreen" />
+              <Logo size={isMobile ? '60vw' : '35vw'} fill="lightgreen" />
                 <a href="" className={styles.aboutLink}>ABOUT US</a>
             </div>
         </div>

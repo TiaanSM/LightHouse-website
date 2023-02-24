@@ -12,12 +12,14 @@
     color: rgb(131, 131, 131);
     font-family: sans-serif;
     font-weight: 300;
-    font-size: 3.5rem;
-    padding-inline: 10rem;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 1.6111111111111112rem + 2.2222222222222223vw, 3.5rem);
+    padding-inline: clamp(3.6rem, -2.088888888888889rem + 14.222222222222221vw, 10rem);
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 10rem;
 }
+
 .highlight {
     font-family: serif;
     color: white;
@@ -46,7 +48,7 @@
     background-color: purple;
 }
 .circle {
-    background-color: #070707;
+    background-color: #1a1b1b;
     border-radius: 100%;
     width: 80%;
     height: 80%;
@@ -91,7 +93,8 @@
     text-align: center;
     font-family: sans-serif;
     font-weight: 300;
-    font-size: 8rem;
+    font-size: 4rem;
+    font-size: clamp(4rem, 1.6744186046511627rem + 7.441860465116279vw, 8rem);
     padding-bottom: 10rem;
 }
 
@@ -106,7 +109,7 @@
 
 .colContainer {
     width: 100%;
-    height: 95vh;
+    aspect-ratio: 2/1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -114,7 +117,7 @@
 
 .rowContainer {
     width: 100%;
-    height: 95vh;
+    aspect-ratio: 16/9;
     display: grid;
     grid-template-columns: 100%;
     padding: 2rem 0;
@@ -137,4 +140,52 @@
 
 .textContainer {
     position: absolute;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: calc(100vw - 4rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .mainText {
+        padding-inline: 0rem;
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 0.6176470588235294rem + 4.705882352941177vw, 2.5rem);
+        padding-top: 0rem;
+    }
+
+    .square1, .square2 {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .colContainer {
+        gap: 1rem;
+    }
+    .rowContainer {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: calc(100vw - 2.4rem);
+    }
+    .workTitle {
+        padding-bottom: 5rem;
+    }
+    .colContainer {
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+    }
+    .rowContainer {
+        width: 100%;
+        height: 50vh;
+        grid-template-columns: 100%;
+        padding: 1rem 0;
+    }
 }

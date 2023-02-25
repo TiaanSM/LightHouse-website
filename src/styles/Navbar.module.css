@@ -67,4 +67,7 @@
     .cta {
         display: none;
     }
+    .menuContainer {
+        padding: 0.15rem;
+    }
 }

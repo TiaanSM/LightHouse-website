@@ -16,7 +16,7 @@
     font-size: clamp(2.5rem, 1.6111111111111112rem + 2.2222222222222223vw, 3.5rem);
     padding-inline: clamp(3.6rem, -2.088888888888889rem + 14.222222222222221vw, 10rem);
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 9rem;
     padding-bottom: 10rem;
 }
 
@@ -174,6 +174,9 @@
     }
     .workTitle {
         padding-bottom: 5rem;
+    }
+    .cardContainer {
+        padding-bottom: 7rem;
     }
     .colContainer {
         width: 100%;

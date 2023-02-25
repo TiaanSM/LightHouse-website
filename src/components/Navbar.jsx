@@ -6,6 +6,8 @@ const Navbar = () => {
 
   const [isOpen, setOpen] = useState(false)
 
+  const isMobile = window.innerWidth < 500;
+
   return (
     <nav className={styles.nav}>
         <div className={styles.container}>
@@ -20,7 +22,7 @@ const Navbar = () => {
                   <Hamburger 
                     toggled={isOpen} 
                     toggle={setOpen} 
-                    size={24} 
+                    size={isMobile ? 18 : 24} 
                     duration={0.5} 
                     distance="sm" 
                     color="white"
@@ -29,6 +31,18 @@ const Navbar = () => {
                   />
                 </span>
             </div>
+        </div>
+
+        <div>
+          <ul>
+            <li>WORK</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ul>
+          <span>
+            <span>HELLO@LIGHTHOUSE.FAKE</span>
+            <span>75 WORKER WAY, PINELANDS CPT WC, SOUTH AFRICA</span>
+          </span>
         </div>
     </nav>
   )

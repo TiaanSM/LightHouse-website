@@ -61,17 +61,19 @@
 }
 
 .title {
-    font-size: 10rem;
+    font-size: 5rem;
+    font-size: clamp(5rem, 2.0930232558139537rem + 9.30232558139535vw, 10rem);
     font-family: sans-serif;
     font-weight: 300;
     color: white;
-    line-height: 9.5rem;
+    line-height: clamp(4.5rem, 1.5930232558139537rem + 9.30232558139535vw, 9.5rem);
     padding-bottom: 15rem;
 }
 
 .hollowText {
     color: transparent;
-    font-size: 10rem;
+    font-size: 5rem;
+    font-size: clamp(5rem, 2.0930232558139537rem + 9.30232558139535vw, 10rem);
     -webkit-text-stroke: 1px white;
     font-family: sans-serif;
 }
@@ -91,7 +93,7 @@
 
 .image2 {
     position: absolute;
-    top: 65rem;
+    top: clamp(50rem, 41.27906976744186rem + 27.906976744186046vw, 65rem);
     right: 5rem;
     width: 20vw;
     aspect-ratio: 4/4;
@@ -109,7 +111,7 @@
     justify-content: center;
     align-items: center;
     bottom: 3rem;
-    left: 30rem;
+    left: clamp(10rem, -1.6279069767441854rem + 37.2093023255814vw, 30rem);
 }
 .smallSquare {
     width: 40%;
@@ -140,5 +142,71 @@
     }
     100% {
         background-color: lightgreen;
+    }
+}
+
+@media (max-width: 900px) {
+    .textContainer {
+        width: calc(100vw - 4rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .square {
+        border-radius: 2rem;
+    }
+    .container {
+        padding-top: 4rem;
+    }
+
+    .textContainer {
+        width: calc(100vw - 2.4rem);
+    }
+
+    .title {
+        font-size: 3rem;
+        font-size: clamp(3rem, 0rem + 16vw, 5rem);
+        line-height: clamp(3rem, 0rem + 16vw, 5rem);
+    }
+    .hollowText {
+        font-size: 3rem;
+        font-size: clamp(3rem, 0rem + 16vw, 5rem);
+    }
+
+    .image1 {
+        top: 16rem;
+        right: 4rem;
+    }
+    .image2 {
+        width: 30vw;
+        right: 2rem;
+        top: 110vh;
+    }
+    .image3 {
+        width: 35vw;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .image1 {
+        width: 100%;
+        right: 0rem;
+        top: 7rem;
+        border-radius: 0;
+    }
+    .image2 {
+        top: 95vh;
+        right: 0;
+        width: 40vw;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .image3 {
+        left: 0;
+        width: 45vw;
+        border-radius: 0 1rem 1rem 0;
+    }
+    .smallSquare {
+        border-radius: 5px;
     }
 }

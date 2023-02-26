@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
 
             <div className={styles.buttonContainer}>
-                <button className={styles.cta}>SAY HELLO</button>
+                <button className={isOpen ? styles.ctaB : styles.ctaW}>SAY HELLO</button>
                 <span className={styles.menuContainer}>
                   <Hamburger 
                     toggled={isOpen} 
@@ -25,7 +25,7 @@ const Navbar = () => {
                     size={isMobile ? 18 : 24} 
                     duration={0.5} 
                     distance="sm" 
-                    color="white"
+                    color={isOpen ? 'black' : 'white'}
                     easing="ease"
                     label="Show menu"
                   />
@@ -33,16 +33,14 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div>
-          <ul>
-            <li>WORK</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+        <div className={isOpen ? styles.openMenu : styles.closedMenu} onClick={() => setOpen(!isOpen)}>
+          <ul className={styles.linkContainer}>
+            <li className={styles.link}>WORK</li>
+            <li className={styles.link}>ABOUT</li>
+            <li className={styles.link}>CONTACT</li>
           </ul>
-          <span>
-            <span>HELLO@LIGHTHOUSE.FAKE</span>
-            <span>75 WORKER WAY, PINELANDS CPT WC, SOUTH AFRICA</span>
-          </span>
+            <span className={styles.emailText}>HELLO@LIGHTHOUSE.FAKE</span>
+            <span className={styles.addressText}>75 WORKER WAY, PINELANDS CPT WC, SOUTH AFRICA</span>
         </div>
     </nav>
   )

@@ -89,6 +89,7 @@
     aspect-ratio: 4/2.36;
     background-color: gray;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
 .image2 {
@@ -99,6 +100,7 @@
     aspect-ratio: 4/4;
     background-color: gray;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
 .image3 {

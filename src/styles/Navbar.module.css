@@ -28,9 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 200;
 }
 
-.cta {
+.ctaW {
     padding: 1rem 1.7rem;
     font-size: 1.1rem;
     border-radius: 2rem;
@@ -39,7 +40,18 @@
     color: white;
     background-color: transparent;
     margin-right: 2rem;
-    transition: border 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ctaB {
+    padding: 1rem 1.7rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    margin-right: 2rem;
+    transition: all 0.5s ease;
 }
 
 .menuContainer {
@@ -49,13 +61,81 @@
     transition: border 0.5s ease;
 }
 
-.cta:hover, .menuContainer:hover {
+.ctaW:hover, .menuContainer:hover {
     border: 1px solid white;
+}
+.ctaB:hover {
+    border: 1px solid black;
+}
+
+.closedMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 20;
+    transition: all 1s ease;
+}
+.openMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 20;
+    transition: all 1s ease;
+}
+
+.linkContainer {
+    padding-inline: 5rem;
+    padding-top: 7rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.link {
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.9433962264150944rem + 8.30188679245283vw, 8rem);
+    font-family: sans-serif;
+    line-height: clamp(3.2rem, 1.7000000000000002rem + 8vw, 8.5rem);
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.emailText, .addressText {
+    font-family: sans-serif;
+    padding-inline: 5rem;
+}
+.emailText {
+    padding-bottom: 0.6rem;
 }
 
 @media (max-width: 900px) {
     .container {
         width: calc(100vw - 4rem);
+    }
+    .linkContainer {
+        padding-inline: 2rem;
+    }
+    .emailText, .addressText {
+        padding-inline: 2rem;
     }
 }
 
@@ -69,5 +149,13 @@
     }
     .menuContainer {
         padding: 0.15rem;
+    }
+    .linkContainer {
+        padding-top: 10rem;
+        padding-inline: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    .emailText, .addressText {
+        padding-inline: 1.2rem;
     }
 }

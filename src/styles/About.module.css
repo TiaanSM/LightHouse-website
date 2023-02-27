@@ -11,11 +11,13 @@
     height: 100%;
     z-index: -10;
     filter: grayscale(100%) brightness(40%);
+    object-fit: cover;
 }
 
 .container {
     width: 100%;
     border-top: 1px solid gray;
+    overflow: hidden;
 }
 
 .brandContainer {

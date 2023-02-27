@@ -1,8 +1,9 @@
 import styles from '../styles/Services.module.css';
 
-const ServicesSection = () => {
+const ServicesSection = (props) => {
+
   return (
-    <section className={styles.section}>
+    <section className={props.inView ? styles.sectionIn : styles.sectionOut}>
         <div className={styles.container}>
 
             <div className={styles.headingContainer}>

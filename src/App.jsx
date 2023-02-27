@@ -6,19 +6,25 @@ import AnimatedSection from './components/AnimatedSection'
 import ServicesSection from './components/ServicesSection'
 import About from './components/About'
 import Footer from './components/Footer'
+import { useInView } from 'react-intersection-observer';
 
 function App() {
 
-  // bg: #070707
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.20,
+  });
 
   return (
     <div className="App">
 
-      <Navbar/>
+      <Navbar inView={inView}/>
       <Header/>
       <Main/>
       <AnimatedSection/>
-      <ServicesSection/>
+      <div ref={ref}>
+      <ServicesSection inView={inView} />
+      </div>
       <About/>
       <Footer/>
       

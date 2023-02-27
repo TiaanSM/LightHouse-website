@@ -30,7 +30,7 @@ const About = () => {
         <div className={styles.aboutSection}>
             <div className={styles.aboutContainer}>
               <Logo size={isMobile ? '60vw' : '35vw'} fill="rgba(124, 238, 124, 0.557)" />
-                <a href="" className={styles.aboutLink}>ABOUT US</a>
+                <a href="/" className={styles.aboutLink}>ABOUT US</a>
             </div>
         </div>
 

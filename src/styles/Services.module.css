@@ -1,9 +1,21 @@
-.section {
+.sectionOut {
+    width: 100vw;
+    background-color: #1a1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    padding-top: 7rem;
+   
+}
+.sectionIn {
     width: 100vw;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
+    padding-top: 7rem;
 }
 
 .container {

@@ -2,7 +2,7 @@ import styles from '../styles/Navbar.module.css'
 import { Squeeze as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [isOpen, setOpen] = useState(false)
 
@@ -13,11 +13,11 @@ const Navbar = () => {
         <div className={styles.container}>
             <div className={styles.logoContainer}>
                 <img src="" alt="" />
-                <span className={styles.logoText}>Light House</span>
+                <span className={isOpen || props.inView ? styles.logoTextB : styles.logoText}>Light House</span>
             </div>
 
             <div className={styles.buttonContainer}>
-                <button className={isOpen ? styles.ctaB : styles.ctaW}>SAY HELLO</button>
+                <button className={isOpen || props.inView ? styles.ctaB : styles.ctaW}>SAY HELLO</button>
                 <span className={styles.menuContainer}>
                   <Hamburger 
                     toggled={isOpen} 
@@ -25,7 +25,7 @@ const Navbar = () => {
                     size={isMobile ? 18 : 24} 
                     duration={0.5} 
                     distance="sm" 
-                    color={isOpen ? 'black' : 'white'}
+                    color={isOpen || props.inView ? 'black' : 'white'}
                     easing="ease"
                     label="Show menu"
                   />

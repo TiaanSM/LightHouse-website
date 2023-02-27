@@ -4,6 +4,11 @@ import instagramLogo from '../assets/instagram.png'
 import linkedinLogo from '../assets/linkedin.png'
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo(0,0);
+    }
+
   return (
     <footer className={styles.footer}>
 
@@ -37,7 +42,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.bottomContainer}>
-                <a href="" className={styles.topLink}>BACK TO TOP</a>
+                <p className={styles.topLink} onClick={scrollToTop}>BACK TO TOP</p>
                 <span className={styles.copyright}>&copy;THE LIGHT HOUSE LTD</span>
             </div>
         </div>

@@ -1,18 +1,8 @@
-import { useState } from 'react';
+
 import styles from '../styles/Main.module.css';
 import WorkCard from './WorkCard';
 
 const Main = () => {
-
-  const [playVideo, setPlayVideo] = useState(false);
-
-  const handleVideoPlay = () => {
-    if (playVideo === true) {
-      return this.play();
-    } else {
-      return this.pause();
-    }
-  }
 
   return (
   <main className={styles.main}>

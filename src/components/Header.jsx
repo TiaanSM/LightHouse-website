@@ -13,7 +13,9 @@ const Header = () => {
         </div>
 
         <div className={styles.container}>
-            <img src="" alt="" className={styles.video} />
+            <video className={styles.video} autoPlay loop muted>
+              <source src='https://ik.imagekit.io/x29dtqzji/Lighthouse-website/header.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510032698' type="video/mp4" />
+            </video>
         </div>
 
     </header>

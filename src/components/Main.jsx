@@ -1,7 +1,19 @@
+import { useState } from 'react';
 import styles from '../styles/Main.module.css';
 import WorkCard from './WorkCard';
 
 const Main = () => {
+
+  const [playVideo, setPlayVideo] = useState(false);
+
+  const handleVideoPlay = () => {
+    if (playVideo === true) {
+      return this.play();
+    } else {
+      return this.pause();
+    }
+  }
+
   return (
   <main className={styles.main}>
     <div className={styles.container}>
@@ -22,17 +34,17 @@ const Main = () => {
           <div className={styles.cardContainer}>
 
             <div className={styles.colContainer}>
-              <WorkCard />
-              <WorkCard />
+              <WorkCard src="https://ik.imagekit.io/x29dtqzji/Lighthouse-website/project-1.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510030743" />
+              <WorkCard src="https://ik.imagekit.io/x29dtqzji/Lighthouse-website/project-2.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510030840" />
             </div>
 
             <div className={styles.rowContainer}>
-              <WorkCard /> 
+              <WorkCard src="https://ik.imagekit.io/x29dtqzji/Lighthouse-website/project-3.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510031499" /> 
             </div>
 
             <div className={styles.colContainer}>
-              <WorkCard />
-              <WorkCard />
+              <WorkCard src="https://ik.imagekit.io/x29dtqzji/Lighthouse-website/project-4.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510031373" />
+              <WorkCard src="https://ik.imagekit.io/x29dtqzji/Lighthouse-website/project-5.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1677510031607" />
             </div>
 
           </div>

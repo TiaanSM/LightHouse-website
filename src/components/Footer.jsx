@@ -10,7 +10,7 @@ const Footer = () => {
     }
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
 
         <div className={styles.topContainer}>
 
@@ -24,18 +24,18 @@ const Footer = () => {
         <div className={styles.midContainer}>
             <div className={styles.mainLinkContainer}>
                 <div className={styles.linkContainer}>
-                    <a href="" className={styles.link}>WORK</a>
-                    <a href="" className={styles.link}>ABOUT</a>
-                    <a href="" className={styles.link}>CONTACT</a>
+                    <a href="#work" className={styles.link}>WORK</a>
+                    <a href="#about" className={styles.link}>ABOUT</a>
+                    <a href="#contact" className={styles.link}>CONTACT</a>
                 </div>
                 <div className={styles.linkContainer}>
-                    <a href="" className={styles.link2}>
+                    <a href="https://vimeo.com" className={styles.link2}>
                         <img src={vimeoLogo} alt="vimeo-logo" className={styles.linkLogo} />
                     </a>
-                    <a href="" className={styles.link2}>
+                    <a href="https://instagram.com" className={styles.link2}>
                         <img src={instagramLogo} alt="instagram-logo" className={styles.linkLogo} />
                     </a>
-                    <a href="" className={styles.link2}>
+                    <a href="https://linkedin.com" className={styles.link2}>
                         <img src={linkedinLogo} alt="linkdin-logo" className={styles.linkLogo} />
                     </a>
                 </div>

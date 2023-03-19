@@ -5,7 +5,7 @@ import WorkCard from './WorkCard';
 const Main = () => {
 
   return (
-  <main className={styles.main}>
+  <main className={styles.main} id="work">
     <div className={styles.container}>
 
       <h2 className={styles.mainText}>

@@ -35,9 +35,9 @@ const Navbar = (props) => {
 
         <div className={isOpen ? styles.openMenu : styles.closedMenu} onClick={() => setOpen(!isOpen)}>
           <ul className={styles.linkContainer}>
-            <li className={styles.link}>WORK</li>
-            <li className={styles.link}>ABOUT</li>
-            <li className={styles.link}>CONTACT</li>
+            <li><a href="#work" className={styles.link}>WORK</a></li>
+            <li><a href="#about" className={styles.link}>ABOUT</a></li>
+            <li><a href="#contact" className={styles.link}>CONTACT</a></li>
           </ul>
             <span className={styles.emailText}>HELLO@LIGHTHOUSE.FAKE</span>
             <span className={styles.addressText}>75 WORKER WAY, PINELANDS CPT WC, SOUTH AFRICA</span>

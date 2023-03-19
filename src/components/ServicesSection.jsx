@@ -3,7 +3,7 @@ import styles from '../styles/Services.module.css';
 const ServicesSection = (props) => {
 
   return (
-    <section className={props.inView ? styles.sectionIn : styles.sectionOut}>
+    <section className={props.inView ? styles.sectionIn : styles.sectionOut} id="about">
         <div className={styles.container}>
 
             <div className={styles.headingContainer}>
